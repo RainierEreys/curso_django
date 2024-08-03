@@ -51,6 +51,19 @@ my_dict = {
 
 for element in my_dict.values():
     print(element)
+    
+for element in my_dict:
+    print(element)
+    if element == "Edad":
+        continue
+    else:
+        print("Se ejecuta")
+else:
+        print("El bucle for ha finalizado")
+
+
+
+
 
 
         
