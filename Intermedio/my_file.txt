@@ -1,0 +1,5 @@
+Mi nombre es Rainier
+Mi apellido es Peña
+23 Años
+Mi lenguaje favorito es Python
+Hola como estas

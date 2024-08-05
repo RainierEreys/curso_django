@@ -1,0 +1,11 @@
+{
+    "name": "Rainier",
+    "surname": "Pe\u00f1a",
+    "age": 23,
+    "languages": [
+        "Python",
+        "Swift",
+        "Kotlin"
+    ],
+    "website": "https://www.moure.dev"
+}
