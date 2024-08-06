@@ -38,8 +38,8 @@ json.dump(json_text, json_file, indent=4) ## PARA METER CONTENIDO AL JSON
 
 json_file.close()  ## HAY QUE CERRARLO PARA PODER LEER LOS ARCHIVOS
 
+#para imprimir su contenido
 with open("Intermedio/my_file.json") as my_other_file:
-    
     for line in my_other_file.readlines():
         print(line)
 
@@ -47,4 +47,34 @@ json_dict = json.load(open("Intermedio/my_file.json")) ##PARA CARGAR EL CONTENID
 print(json_dict)
 print(type(json_dict))
 
+print(json_dict["name"])
+
+
+#.csv file
+
+import csv
+#Introducir datos a un archivo .csv
+csv_file = open("Intermedio/my_csv.csv", "w+")
+csv_writer = csv.writer(csv_file)
+
+csv_writer.writerow(json_dict)
+csv_writer.writerow(['rainier', 'pena', 23, ['Python', 'Javascript'], 'www.technorai.com'])
+
+csv_file.close()
+
+with open("Intermedio/my_csv.csv") as my_other_file:
+    for line in my_other_file.readlines():
+        print(line)
+
+#.xlsx file
+
+# import xlrd (DEBE INSTALARSE)
+
+
+#.xml file
+
+import xml
+
+
+ 
     
